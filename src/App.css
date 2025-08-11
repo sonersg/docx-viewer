@@ -1,0 +1,17 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dropzone {
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+  padding: 1em;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+.dropzone:hover {
+  border-color: #999;
+}
