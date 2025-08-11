@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { useDropzone } from 'react-dropzone';
-import { renderAsync } from 'docx-preview';
+import { renderAsync, type WordDocument } from 'docx-preview';
 
 function DocxViewer() {
   const [fileName, setFileName] = useState('');
   const [error, setError] = useState('');
 
-  const onDrop = (acceptedFiles: any) => {
+  const onDrop = (acceptedFiles: WordDocument) => {
     setError('');
     const file = acceptedFiles[0];
 
